@@ -163,6 +163,11 @@ class VideoQualitySlider extends Component<IProps> {
                 videoQuality: STANDARD
             },
             {
+                onSelect: this._enableHighDefinition,
+                textKey: 'videoStatus.highDefinition',
+                videoQuality: HIGH
+            },
+            {
                 onSelect: this._enableUltraHighDefinition,
                 textKey: 'videoStatus.highDefinition',
                 videoQuality: ULTRA
